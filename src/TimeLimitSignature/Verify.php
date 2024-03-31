@@ -13,12 +13,11 @@ class Verify
         protected string $secret,
         protected string $hasher = 'sha256',
         protected int $expiredIn = 300
-    ) { }
+    ) {
+    }
 
     /**
      * Verify signature.
-     *
-     * @param  int  $currentTimestamp
      */
     public function __invoke(string $payload, string $signed, ?int $currentTimestamp = null): bool
     {

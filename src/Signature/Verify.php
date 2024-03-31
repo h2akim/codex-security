@@ -10,7 +10,8 @@ class Verify
     public function __construct(
         protected string $secret,
         protected string $hasher = 'sha256'
-    ) { }
+    ) {
+    }
 
     /**
      * Verify signature.

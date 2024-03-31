@@ -10,7 +10,8 @@ class Create
     public function __construct(
         protected string $secret,
         protected string $hasher = 'sha256'
-    ) { }
+    ) {
+    }
 
     /**
      * Create signature.
